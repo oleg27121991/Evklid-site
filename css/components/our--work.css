@@ -1,0 +1,193 @@
+.our--work-title {
+    margin-bottom: 49px;
+}
+
+.container .tabs__nav {
+    display: flex;
+    margin-bottom: 44px;
+}
+
+.our--work__content {
+    display: none;
+}
+
+.our--work__content--active {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.our--work__tabs {
+    display: none;
+}
+
+.tabs-btn--active {
+    color: var(--orange-active);
+}
+
+.tabs-btn {
+    font-size: 18px;
+    line-height: 22px;
+    transition: color 0.3s ease, outline 0.3s ease;
+    cursor: pointer;
+}
+
+.tabs-btn:focus-visible {
+    outline: 2px solid var(--orange);
+    color: var(--black);
+}
+
+.tabs-btn:hover {
+    color: var(--orange-hover);
+}
+
+.tabs-btn:active {
+    color: var(--orange-active);
+}
+
+.tabs__item:not(:last-child) {
+    margin-right: 86px;
+}
+
+.our--work__container {
+    display: block;
+    margin-top: 45px;
+    width: 100%;
+}
+
+.our--work__content {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.our--work__container__left {
+    display: flex;
+    flex-direction: column;
+    max-width: 758px;
+    min-height: 460px;
+    width: 100%;
+}
+
+.our--work__container__left-title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.our--work__container__left-desc {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.our--work__container__left__buttons {
+    margin-top: auto;
+}
+
+.our--work__container__left__buttons-left--btn {
+    margin-right: 29px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 38px;
+    transition: background-color 0.3s ease;
+}
+
+.our--work__container__left__buttons-left--btn:focus-visible {
+    background-color: var(--orange-hover);
+    outline: none;
+}
+
+.our--work__container__left__buttons-left--btn:hover {
+    background-color: var(--orange-hover);
+}
+
+.our--work__container__left__buttons-left--btn:active {
+    background-color: var(--orange-active);
+}
+
+.our--work__container__left__buttons-right--btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 19px 37px;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.our--work__container__left__buttons-right--btn:focus-visible {
+    background-color: var(--dark-light);
+    border-color: var(--dark-light);
+    color: var(--white);
+    outline: none;
+}
+
+.our--work__container__left__buttons-right--btn:hover {
+    background-color: var(--dark-light);
+    border-color: var(--dark-light);
+    color: var(--white);
+}
+
+.our--work__container__left__buttons-right--btn:active {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.our--work__right-1 {
+    margin-top: 0.5%;
+    margin-left: auto;
+    max-width: 49%;
+    width: 100%;
+    min-height: 460px;
+    border-radius: 32px;
+    background-image: url(../../img/our--work_img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our--work__right-2 {
+    margin-top: 0.5%;
+    margin-left: auto;
+    max-width: 49%;
+    width: 100%;
+    min-height: 460px;
+    border-radius: 32px;
+    background-image: url(../../img/tabs_2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our--work__right-3 {
+    margin-top: 0.5%;
+    margin-left: auto;
+    max-width: 49%;
+    width: 100%;
+    min-height: 460px;
+    border-radius: 32px;
+    background-image: url(../../img/tabs_3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our--work__right-4 {
+    margin-top: 0.5%;
+    margin-left: auto;
+    max-width: 49%;
+    width: 100%;
+    min-height: 460px;
+    border-radius: 32px;
+    background-image: url(../../img/tabs_4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

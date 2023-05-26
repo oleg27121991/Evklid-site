@@ -1,0 +1,242 @@
+header {
+    padding: 13px 0;
+    background-color: var(--white);
+    border-radius: 0px 0px 32px 32px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 225px;
+    padding-top: 1px;
+    padding-right: 1px;
+}
+
+.header__nav {
+    margin-left: auto;
+    width: 40%;
+    display: flex;
+}
+
+.header__nav__list {
+    display: flex;
+}
+
+.header__nav__list__item {
+    padding-bottom: 2px;
+}
+
+.header__nav__list__item:not(:first-child) {
+    margin-left: 85px;
+}
+
+.header__nav__list__item-link {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-decoration: none;
+    transition: color 0.3s ease, outline 0.2s ease, border-bottom 0.1s ease;
+}
+
+.header__nav__list__item-link:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid var(--orange);
+}
+
+.header__nav__list__item-link:hover {
+    border-bottom: 2px solid var(--orange);
+}
+
+.header__nav__list__item-link:active {
+    color: var(--orange-active);
+    border-bottom: 2px solid var(--orange-active);
+}
+
+.header__menu__search {
+    margin-left: 260px;
+    width: 2.5%;
+    height: 36px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 1000;
+}
+
+.header__menu__search svg {
+    fill: none;
+    flex-shrink: 0;
+    stroke: var(--black);
+    transition: stroke 0.3s ease, outline 0.3s ease, transform 0.3s linear;
+}
+
+.header__menu__search:focus {
+  outline: none;
+}
+
+.header__menu__search:focus-visible svg {
+    outline-offset: 2px;
+    outline: 2px solid var(--orange);
+}
+
+.header__menu__search:hover svg {
+    stroke: var(--orange);
+}
+
+.header__menu__search:active svg {
+    stroke: var(--orange);
+}
+
+.header__menu__search svg rect {
+    fill: var(--black);
+}
+
+.header__menu__search:focus svg rect {
+    fill: var(--black);
+}
+
+.header__menu__search:hover svg rect {
+    fill: var(--orange);
+}
+
+.header__menu__search:active svg rect {
+    fill: var(--orange);
+}
+
+.search {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 0;
+    top: -80px;
+    width: 28%;
+    min-width: 539px;
+    height: 60px;
+    z-index: 1000;
+    padding-left: 32px;
+    padding-right: 27px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
+    background-color: var(--white);
+    overflow-y: auto;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.search--active {
+  top: 8px;
+  right: -13px;
+  opacity: 1;
+}
+
+.search__input {
+    height: 54%;
+    width: 80%;
+    border: none;
+    background-color: var(--white);
+    outline: none;
+    border-bottom: 1px solid var(--gray);
+    color: var(--black);
+}
+
+.search__find {
+    fill: none;
+    flex-shrink: 0;
+    stroke: var(--black);
+}
+
+.search__find svg {
+    transition: 0.3s ease;
+}
+
+.search__find:focus-visible svg {
+    outline-offset: 2px;
+    outline: 2px solid var(--orange);
+}
+
+.search__find:hover svg {
+    stroke: var(--orange);
+}
+
+.search__find:active svg {
+    stroke: var(--orange-active);
+}
+
+.search__find svg rect {
+    fill: var(--black);
+}
+
+.search__find:focus svg rect {
+    fill: var(--black);
+}
+
+.search__find:hover svg rect {
+    fill: var(--orange);
+}
+
+.search__find:active svg rect {
+    fill: var(--orange);
+}
+
+.search__close svg {
+    stroke: var(--gray);
+    cursor: pointer;
+    transition: stroke 0.3s ease, outline 0.3s ease, fill 0.3s ease;
+}
+
+.search__close:focus-visible svg {
+    outline-offset: 2px;
+    outline: 2px solid var(--orange);
+}
+
+.search__close:hover svg {
+    stroke: var(--orange);
+}
+
+.search__close:active svg {
+    stroke: var(--black);
+}
+
+.search__close svg circle {
+    stroke: var(--gray);
+}
+
+.search__close:focus svg circle {
+    stroke: var(--gray);
+}
+
+.search__close:hover svg circle {
+    stroke: var(--orange);
+}
+
+.search__close:active svg circle {
+    stroke: var(--black);
+}
+
+.search__close svg rect {
+    stroke: var(--gray);
+    fill: var(--gray);
+}
+
+.search__close:focus svg rect {
+    stroke: var(--gray);
+    fill: var(--gray);
+}
+
+.search__close:hover svg rect {
+    stroke: var(--orange);
+    fill: var(--orange);
+}
+
+.search__close:active svg rect {
+    stroke: var(--black);
+    fill: var(--black);
+}
+

@@ -1,0 +1,150 @@
+.faq {
+    margin-top: 112px;
+}
+
+.faq-title {
+    margin-bottom: 32px;
+}
+
+.faq__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__list .faq__list__item {
+    display: block;
+    color: var(--black);
+    position: relative;
+    padding: 30px 0 30px;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    margin-top: -1px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.faq__list__item svg {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.faq__list__item svg ellipse {
+    fill: var(--gray);
+    transition: fill 0.3s ease;
+}
+
+.faq__list__item svg path {
+    fill: var(--black);
+    transition: fill 0.3s ease;
+}
+
+.faq__list__item .faq__list__item__dropdown-title {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font: bold 24px 'Montserrat';
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--black);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* focus  */
+
+.ac .ac-trigger:focus {
+  color: var(--black);
+  outline: none;
+}
+
+.faq__list__item:has(.faq__list__item__dropdown-title:focus) {
+    border-top-color: var(--orange);
+    border-bottom-color: var(--orange);
+    color: var(--black);
+    outline: none;
+    z-index: 2;
+}
+
+.faq__list__item__dropdown-title:focus svg path {
+    fill: var(--white);
+}
+
+.faq__list__item__dropdown-title:focus svg ellipse {
+    fill: var(--orange);
+}
+
+  /* hover  */
+
+.faq__list__item:hover {
+    border-top-color: var(--orange);
+    border-bottom-color: var(--orange);
+    z-index: 2;
+}
+
+.faq__list__item:hover .faq__list__item__dropdown {
+    color: var(--orange);
+}
+
+.faq__list__item:hover svg path{
+    fill: var(--white);
+}
+
+.faq__list__item:hover svg ellipse {
+    fill: var(--orange);
+}
+
+  /* active  */
+
+.faq__list__item:has(.faq__list__item__dropdown:active) {
+    border-top-color: var(--gray);
+    border-bottom-color: var(--gray);
+    z-index: 2;
+}
+
+.faq__list__item:has(.faq__list__item__dropdown:active) {
+    border-top-color: var(--gray);
+    border-bottom-color: var(--gray);
+    z-index: 2;
+}
+
+.faq__list__item:active .faq__list__item__dropdown {
+    color: var(--black);
+}
+
+.faq__list__item:active svg path{
+    fill: var(--black);
+}
+
+.faq__list__item:active svg ellipse {
+    fill: var(--gray);
+}
+
+/* Acordion */
+
+.ac {
+    margin-top: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.faq__list__item .faq-text {
+    margin: 0;
+    max-width: 1003px;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.is-active .faq__list__item__dropdown-icon {
+    transform: rotate(45deg);
+}
+
+.faq__list__item .faq-text-top {
+    margin: 30px 0 32px;
+}
+
+.faq__list__item .faq-text-bottom {
+    margin-bottom: 40px;
+}

@@ -1,0 +1,103 @@
+@import 'variables.css';
+@import 'fonts.css';
+
+
+@import 'components/header.css';
+@import 'components/hero.css';
+@import 'components/about.css';
+@import 'components/our--work.css';
+@import 'components/faq.css';
+@import 'components/footer.css';
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 320px;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--white);
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.section-offset {
+    margin-top: 50px;
+}
+
+.section-offset-2 {
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 59px;
+}
+
+.__btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 700;
+    color: var(--white);
+    border-radius: 16px;
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+}
+
+.our--work-768px {
+    display: none;
+}
+
+.about-desc-768 {
+    display: none;
+}
+
+.our--work__container__left-desc-768 {
+    display: none;
+}
+
+.footer__768px {
+    display: none;
+}
+
+.about__left__info-320px {
+    display: none;
+}
+
+.footer__social-320 {
+    display: none;
+}
+
+
+.ac .ac-trigger::after {
+    content: "";
+}
